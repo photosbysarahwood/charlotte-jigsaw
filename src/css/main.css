@@ -30,7 +30,8 @@ nav {
   max-width: 2rem;
 }
 
-/* Desktop Only Styles */
+/* Desktop Only Styles
+Desktop @media (min-width: 48em) { */
 nav {
   display: flex;
 }
