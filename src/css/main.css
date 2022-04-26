@@ -30,6 +30,11 @@ nav {
   gap: 2rem;
   text-align: center;
   position: sticky;
+  z-index: 2;
+}
+
+body {
+  overflow: hidden;
 }
 
 .c-logo {
@@ -70,6 +75,11 @@ nav {
   justify-content: center;
 }
 
+.final-div {
+  display: flex;
+  align-items: center;
+}
+
 .workspace-div {
   display: flex;
   padding: 5rem 2rem 2rem 2rem;
@@ -92,9 +102,23 @@ nav {
   width: 10rem;
 }
 
+#sac-body:hover {
+  opacity: 80%;
+}
+
+#sac-body.active {
+}
+
 #sac-circle {
   height: 4rem;
   width: 4rem;
+}
+
+#sac-circle:hover {
+  opacity: 80%;
+}
+
+#sac-circle.active {
 }
 
 #sac-square {
@@ -102,8 +126,27 @@ nav {
   width: 5rem;
 }
 
+#sac-square:hover {
+  opacity: 80%;
+}
+
+#sac-square.active {
+}
+
 #sac-triangle {
   height: 4rem;
+  width: 10rem;
+}
+
+#sac-triangle:hover {
+  opacity: 80%;
+}
+
+#sac-triangle.active {
+}
+
+.final-div img {
+  height: 20rem;
   width: 10rem;
 }
 
@@ -113,6 +156,43 @@ nav {
   display: block;
   margin: 0 auto;
   margin-top: 4rem;
+}
+
+#slide-reference {
+  display: flex;
+  align-items: center;
+  width: 40rem;
+  height: 100vh;
+  padding: 5rem 3rem 5rem 0rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(79%);
+  background-color: white;
+}
+
+.slide-bg {
+  background-color: white;
+}
+
+#slide-reference.active {
+  transform: translateX(0);
+}
+
+#slide-reference img {
+  height: 30rem;
+}
+
+.reference {
+  color: white;
+  background-color: #005640;
+  font-family: "Neusa Next Std";
+  border-radius: 1rem 1rem 0rem 0rem;
+  border: none;
+  padding: 1rem 1rem 0.5rem 1rem;
+  font-size: 2rem;
+  transform: rotate(270deg);
+  font-weight: 500;
 }
 
 /* Desktop Only Styles
